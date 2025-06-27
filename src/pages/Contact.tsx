@@ -1,5 +1,5 @@
 
-import { Star, Phone, Mail, MapPin, Clock } from 'lucide-react';
+import { Star, Phone, Mail, MapPin, Clock, Instagram, Facebook } from 'lucide-react';
 import Navigation from '../components/Navigation';
 import { Button } from '../components/ui/button';
 
@@ -37,6 +37,14 @@ const Contact = () => {
                 <span>info@gravity.gr</span>
               </div>
             </div>
+            <div className="flex gap-4">
+              <a href="#" className="hover:text-purple-200 transition-colors">
+                <Instagram size={16} />
+              </a>
+              <a href="#" className="hover:text-purple-200 transition-colors">
+                <Facebook size={16} />
+              </a>
+            </div>
           </div>
         </div>
       </header>
@@ -51,7 +59,7 @@ const Contact = () => {
               Επικοινωνία
             </h1>
             <p className="text-xl text-white/80 mb-8">
-              Είμαστε εδώ για να σας βοηθήσουμε
+              Το πρώτο βήμα για να βρείτε την ισορροπία σας
             </p>
           </div>
 
@@ -93,6 +101,17 @@ const Contact = () => {
                     <h3 className="text-white font-semibold">Ώρες Λειτουργίας</h3>
                     <p className="text-white/80">Δευτέρα - Παρασκευή: 9:00 - 20:00</p>
                     <p className="text-white/80">Σάββατο: 9:00 - 15:00</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-4 p-4 bg-white/10 rounded-lg">
+                  <div className="flex gap-3">
+                    <Instagram className="text-pink-300" size={24} />
+                    <Facebook className="text-blue-300" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-white font-semibold">Κοινωνικά Δίκτυα</h3>
+                    <p className="text-white/80">Ακολουθήστε μας στα social media</p>
                   </div>
                 </div>
               </div>

@@ -40,12 +40,6 @@ const TherapistsSection = () => {
                 <p className="text-lg text-purple-200 mb-4">
                   Ψυχολόγος
                 </p>
-                <div className="bg-white/10 rounded-lg p-4">
-                  <p className="text-white/90 text-sm leading-relaxed">
-                    Εξειδικευμένη στην παιδική και εφηβική ψυχολογία με πολυετή εμπειρία 
-                    στη θεραπευτική προσέγγιση και την υποστήριξη οικογενειών.
-                  </p>
-                </div>
               </div>
               
               {/* Glow effect */}
