@@ -1,12 +1,54 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { Phone, Mail, Star } from 'lucide-react';
+import Hero from '../components/Hero';
+import Navigation from '../components/Navigation';
+import ServicesCloud from '../components/ServicesCloud';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-800 to-blue-900 relative overflow-hidden">
+      {/* Stars Background */}
+      <div className="absolute inset-0 overflow-hidden">
+        {[...Array(50)].map((_, i) => (
+          <Star
+            key={i}
+            className="absolute text-white opacity-20 animate-pulse"
+            size={Math.random() * 8 + 4}
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+              animationDelay: `${Math.random() * 3}s`,
+              animationDuration: `${Math.random() * 2 + 2}s`
+            }}
+          />
+        ))}
       </div>
+
+      {/* Header */}
+      <header className="relative z-10 bg-indigo-600/90 backdrop-blur-sm">
+        <div className="container mx-auto px-4 py-3">
+          <div className="flex justify-between items-center text-white text-sm">
+            <div className="flex items-center gap-6">
+              <div className="flex items-center gap-2">
+                <Phone size={16} />
+                <span>213 0909 508</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Mail size={16} />
+                <span>info@gravity.gr</span>
+              </div>
+            </div>
+            <div className="flex gap-4">
+              <a href="#" className="hover:text-purple-200 transition-colors">f</a>
+              <a href="#" className="hover:text-purple-200 transition-colors">@</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <Navigation />
+      <Hero />
+      <ServicesCloud />
     </div>
   );
 };
