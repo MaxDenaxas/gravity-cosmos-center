@@ -1,8 +1,9 @@
 
-import { Phone, Mail, Star } from 'lucide-react';
+import { Phone, Mail, Star, Instagram, Facebook } from 'lucide-react';
 import Hero from '../components/Hero';
 import Navigation from '../components/Navigation';
 import ServicesCloud from '../components/ServicesCloud';
+import TherapistsSection from '../components/TherapistsSection';
 
 const Index = () => {
   return (
@@ -39,8 +40,12 @@ const Index = () => {
               </div>
             </div>
             <div className="flex gap-4">
-              <a href="#" className="hover:text-purple-200 transition-colors">f</a>
-              <a href="#" className="hover:text-purple-200 transition-colors">@</a>
+              <a href="#" className="hover:text-purple-200 transition-colors">
+                <Instagram size={16} />
+              </a>
+              <a href="#" className="hover:text-purple-200 transition-colors">
+                <Facebook size={16} />
+              </a>
             </div>
           </div>
         </div>
@@ -49,6 +54,7 @@ const Index = () => {
       <Navigation />
       <Hero />
       <ServicesCloud />
+      <TherapistsSection />
     </div>
   );
 };

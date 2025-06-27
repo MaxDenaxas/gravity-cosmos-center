@@ -8,7 +8,7 @@ const ServicesCloud = () => {
       title: "Ατομική ψυχοθεραπεία",
       subtitle: "Προσωπικές συνεδρίες για ψυχική ισορροπία",
       icon: Brain,
-      position: { left: "10%", top: "20%" },
+      position: { left: "8%", top: "15%" },
       size: "large" as const,
       color: "from-blue-400 to-purple-500"
     },
@@ -16,7 +16,7 @@ const ServicesCloud = () => {
       title: "Συμβουλευτική",
       subtitle: "Υποστήριξη και καθοδήγηση",
       icon: Puzzle,
-      position: { right: "15%", top: "15%" },
+      position: { right: "12%", top: "10%" },
       size: "medium" as const,
       color: "from-teal-400 to-blue-500"
     },
@@ -24,7 +24,7 @@ const ServicesCloud = () => {
       title: "Online Συνεδρίες",
       subtitle: "Άνετες συνεδρίες μέσω διαδικτύου",
       icon: Users,
-      position: { left: "5%", top: "60%" },
+      position: { left: "5%", top: "55%" },
       size: "medium" as const,
       color: "from-green-400 to-teal-500"
     },
@@ -32,7 +32,7 @@ const ServicesCloud = () => {
       title: "Ομαδική Θεραπεία",
       subtitle: "Θεραπευτικές ομάδες",
       icon: Heart,
-      position: { left: "45%", top: "70%" },
+      position: { right: "8%", top: "60%" },
       size: "large" as const,
       color: "from-pink-400 to-purple-500"
     }
@@ -49,6 +49,9 @@ const ServicesCloud = () => {
             Ανακαλύψτε τον δικό σας κόσμο ισορροπίας
           </p>
         </div>
+        
+        {/* Enhanced visibility backdrop */}
+        <div className="absolute inset-0 bg-gradient-to-br from-transparent via-indigo-900/10 to-transparent rounded-3xl"></div>
         
         {services.map((service, index) => (
           <ServicePlanet
