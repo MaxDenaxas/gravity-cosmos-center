@@ -5,60 +5,51 @@ import { Brain, Users, Heart, BookOpen, Lightbulb, Puzzle } from 'lucide-react';
 const ServicesCloud = () => {
   const services = [
     {
-      title: "Λογοθεραπεία",
-      subtitle: "(ελληνικά - αγγλικά)",
+      title: "Ατομική ψυχοθεραπεία",
+      subtitle: "Προσωπικές συνεδρίες για ψυχική ισορροπία",
       icon: Brain,
       position: { left: "10%", top: "20%" },
-      size: "large",
+      size: "large" as const,
       color: "from-blue-400 to-purple-500"
     },
     {
-      title: "Διαγνωστικά εργαλεία",
+      title: "Συμβουλευτική",
+      subtitle: "Υποστήριξη και καθοδήγηση",
       icon: Puzzle,
       position: { right: "15%", top: "15%" },
-      size: "medium",
+      size: "medium" as const,
       color: "from-teal-400 to-blue-500"
     },
     {
-      title: "Εργοθεραπεία",
+      title: "Online Συνεδρίες",
+      subtitle: "Άνετες συνεδρίες μέσω διαδικτύου",
       icon: Users,
       position: { left: "5%", top: "60%" },
-      size: "medium",
+      size: "medium" as const,
       color: "from-green-400 to-teal-500"
     },
     {
-      title: "Παιδοψυχιατρική υποστήριξη",
+      title: "Ομαδική Θεραπεία",
+      subtitle: "Θεραπευτικές ομάδες",
       icon: Heart,
       position: { left: "45%", top: "70%" },
-      size: "large",
+      size: "large" as const,
       color: "from-pink-400 to-purple-500"
-    },
-    {
-      title: "Μαθησιακές δυσκολίες",
-      icon: BookOpen,
-      position: { right: "10%", top: "55%" },
-      size: "medium",
-      color: "from-orange-400 to-red-500"
-    },
-    {
-      title: "Πρώιμη παρέμβαση",
-      icon: Lightbulb,
-      position: { left: "35%", top: "45%" },
-      size: "small",
-      color: "from-yellow-400 to-orange-500"
-    },
-    {
-      title: "Συμβουλευτική γονέων",
-      icon: Users,
-      position: { right: "35%", top: "80%" },
-      size: "small",
-      color: "from-indigo-400 to-purple-500"
     }
   ];
 
   return (
     <section className="relative z-10 py-20 min-h-screen">
       <div className="container mx-auto px-4 relative">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            Οι Υπηρεσίες μας
+          </h2>
+          <p className="text-xl text-white/80">
+            Ανακαλύψτε τον δικό σας κόσμο ισορροπίας
+          </p>
+        </div>
+        
         {services.map((service, index) => (
           <ServicePlanet
             key={index}
