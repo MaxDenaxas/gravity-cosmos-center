@@ -41,6 +41,14 @@ const Navigation = () => {
               ΣΧΕΤΙΚΑ ΜΕ ΕΜΑΣ
             </Link>
             <Link 
+              to="/services" 
+              className={`hover:text-purple-600 transition-colors ${
+                isActive('/services') ? 'text-orange-500 font-semibold' : 'text-gray-700'
+              }`}
+            >
+              ΥΠΗΡΕΣΙΕΣ
+            </Link>
+            <Link 
               to="/location" 
               className={`hover:text-purple-600 transition-colors ${
                 isActive('/location') ? 'text-orange-500 font-semibold' : 'text-gray-700'

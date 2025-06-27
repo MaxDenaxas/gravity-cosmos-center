@@ -39,7 +39,7 @@ const Index = () => {
                 <span>info@gravity.gr</span>
               </div>
             </div>
-            <div className="flex gap-4">
+            <div className="flex gap-6">
               <a href="#" className="hover:text-purple-200 transition-colors">
                 <Instagram size={16} />
               </a>
