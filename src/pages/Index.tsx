@@ -32,7 +32,7 @@ const Index = () => {
             <div className="flex items-center gap-6">
               <div className="flex items-center gap-2">
                 <Phone size={16} />
-                <span>213 0909 508</span>
+                <span>6981219691</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail size={16} />
