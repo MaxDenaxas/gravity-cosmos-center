@@ -1,6 +1,6 @@
 
 import { Link, useLocation } from 'react-router-dom';
-import gravityLogo from '../assets/gravity-logo.jpg';
+import gravityLogo from '../assets/gravity-logo.png';
 
 const Navigation = () => {
   const location = useLocation();
