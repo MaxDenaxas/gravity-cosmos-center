@@ -1,6 +1,6 @@
 
-import { Phone } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
+import gravityLogo from '../assets/gravity-logo.jpg';
 
 const Navigation = () => {
   const location = useLocation();
@@ -14,9 +14,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center gap-4">
-            <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-indigo-600 rounded-full flex items-center justify-center">
-              <div className="text-white font-bold text-xl">G</div>
-            </div>
+            <img src={gravityLogo} alt="Gravity Logo" className="w-16 h-16 object-contain" />
             <div>
               <h1 className="text-2xl font-bold text-gray-800">Gravity</h1>
               <p className="text-sm text-gray-600">Balance the mind. Empower the path.</p>
@@ -64,10 +62,6 @@ const Navigation = () => {
             >
               ΕΠΙΚΟΙΝΩΝΙΑ
             </Link>
-            <div className="flex items-center gap-2 text-gray-700">
-              <Phone size={16} />
-              <span className="font-semibold">213 0909 508</span>
-            </div>
           </div>
         </div>
       </div>

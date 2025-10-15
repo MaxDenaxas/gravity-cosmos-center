@@ -33,7 +33,7 @@ const Contact = () => {
               </div>
               <div className="flex items-center gap-2">
                 <Mail size={16} />
-                <span>info@gravity.gr</span>
+                <span>gravity.center25@gmail.com</span>
               </div>
             </div>
             <div className="flex gap-4">
@@ -78,11 +78,11 @@ const Contact = () => {
                   </div>
                 </a>
                 
-                <a href="mailto:info@gravity.gr" className="flex items-center gap-4 p-4 bg-white/10 rounded-lg hover:bg-white/20 transition-colors">
+                <a href="mailto:gravity.center25@gmail.com" className="flex items-center gap-4 p-4 bg-white/10 rounded-lg hover:bg-white/20 transition-colors">
                   <Mail className="text-blue-300" size={24} />
                   <div>
                     <h3 className="text-white font-semibold">Email</h3>
-                    <p className="text-white/80">info@gravity.gr</p>
+                    <p className="text-white/80">gravity.center25@gmail.com</p>
                   </div>
                 </a>
                 
@@ -90,7 +90,7 @@ const Contact = () => {
                   <MapPin className="text-green-300" size={24} />
                   <div>
                     <h3 className="text-white font-semibold">Διεύθυνση</h3>
-                    <p className="text-white/80">Wonder Waves - Κέντρο Ειδικών Θεραπειών</p>
+                    <p className="text-white/80">ΚΕΝΤΡΟ ΕΙΔΙΚΩΝ ΘΕΡΑΠΕΙΩΝ GRAVITY</p>
                   </div>
                 </a>
                 

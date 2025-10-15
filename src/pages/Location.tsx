@@ -65,7 +65,7 @@ const Location = () => {
                       <MapPin className="text-purple-300 mt-1" size={20} />
                       <div>
                         <h3 className="font-semibold text-lg">Διεύθυνση</h3>
-                        <p className="text-white/80">Wonder Waves - Κέντρο Ειδικών Θεραπειών</p>
+                        <p className="text-white/80">ΚΕΝΤΡΟ ΕΙΔΙΚΩΝ ΘΕΡΑΠΕΙΩΝ GRAVITY</p>
                       </div>
                     </div>
                     
@@ -83,7 +83,7 @@ const Location = () => {
                       <div>
                         <h3 className="font-semibold text-lg">Επικοινωνία</h3>
                         <p className="text-white/80">Τηλ: 6981219691</p>
-                        <p className="text-white/80">Email: info@gravity.gr</p>
+                        <p className="text-white/80">Email: gravity.center25@gmail.com</p>
                       </div>
                     </div>
                   </div>
@@ -99,7 +99,7 @@ const Location = () => {
                       allowFullScreen
                       loading="lazy" 
                       referrerPolicy="no-referrer-when-downgrade"
-                      title="Gravity Mind Location"
+                      title="Gravity Location"
                     />
                   </div>
                 </div>

@@ -31,19 +31,17 @@ const Index = () => {
           <div className="flex justify-between items-center text-white text-sm">
             <div className="flex items-center gap-6">
               <div className="flex items-center gap-2">
-                <Phone size={16} />
-                <span>6981219691</span>
-              </div>
-              <div className="flex items-center gap-2">
                 <Mail size={16} />
-                <span>info@gravity.gr</span>
+                <a href="mailto:gravity.center25@gmail.com" className="hover:text-purple-200 transition-colors">
+                  gravity.center25@gmail.com
+                </a>
               </div>
             </div>
             <div className="flex gap-6">
-              <a href="#" className="hover:text-purple-200 transition-colors">
+              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-purple-200 transition-colors">
                 <Instagram size={16} />
               </a>
-              <a href="#" className="hover:text-purple-200 transition-colors">
+              <a href="https://www.facebook.com/groups/1291275665934673/" target="_blank" rel="noopener noreferrer" className="hover:text-purple-200 transition-colors">
                 <Facebook size={16} />
               </a>
             </div>
