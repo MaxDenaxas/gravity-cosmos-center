@@ -41,7 +41,7 @@ const Services = () => {
       color: "from-cyan-400 to-blue-500"
     },
     {
-      title: "Ειδική αγωγή",
+      title: "Ειδική Αγωγή",
       description: "Εξατομικευμένα προγράμματα εκπαίδευσης και υποστήριξης για παιδιά με ειδικές μαθησιακές ανάγκες.",
       icon: Heart,
       color: "from-violet-400 to-purple-500"

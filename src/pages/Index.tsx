@@ -38,7 +38,7 @@ const Index = () => {
               </div>
             </div>
             <div className="flex gap-6">
-              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-purple-200 transition-colors">
+              <a href="https://www.instagram.com/gravity_center25" target="_blank" rel="noopener noreferrer" className="hover:text-purple-200 transition-colors">
                 <Instagram size={16} />
               </a>
               <a href="https://www.facebook.com/groups/1291275665934673/" target="_blank" rel="noopener noreferrer" className="hover:text-purple-200 transition-colors">
