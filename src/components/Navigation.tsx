@@ -28,8 +28,8 @@ const Navigation = () => {
           <Link to="/" className="flex items-center gap-4">
             <img src={gravityLogo} alt="Gravity Logo" className="w-16 h-16 object-contain" />
             <div>
-              <h1 className="text-2xl font-bold text-gray-800">Gravity</h1>
-              <p className="text-sm text-gray-600">Balance the mind. Empower the path.</p>
+              <h1 className="text-2xl font-bold text-foreground">Gravity</h1>
+              <p className="text-sm text-muted-foreground">Balance the mind. Empower the path.</p>
             </div>
           </Link>
           
@@ -39,8 +39,8 @@ const Navigation = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`hover:text-purple-600 transition-colors ${
-                  isActive(link.path) ? 'text-orange-500 font-semibold' : 'text-gray-700'
+                className={`hover:text-primary transition-colors ${
+                  isActive(link.path) ? 'text-secondary font-semibold' : 'text-foreground/80'
                 }`}
               >
                 {link.label}
@@ -51,8 +51,8 @@ const Navigation = () => {
           {/* Mobile Navigation */}
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
-              <button className="md:hidden p-2 hover:bg-gray-100 rounded-lg transition-colors">
-                <Menu size={24} className="text-gray-700" />
+              <button className="md:hidden p-2 hover:bg-accent/10 rounded-lg transition-colors">
+                <Menu size={24} className="text-foreground" />
               </button>
             </SheetTrigger>
             <SheetContent side="right" className="w-64 bg-white">
@@ -62,8 +62,8 @@ const Navigation = () => {
                     key={link.path}
                     to={link.path}
                     onClick={() => setIsOpen(false)}
-                    className={`text-lg hover:text-purple-600 transition-colors ${
-                      isActive(link.path) ? 'text-orange-500 font-semibold' : 'text-gray-700'
+                    className={`text-lg hover:text-primary transition-colors ${
+                      isActive(link.path) ? 'text-secondary font-semibold' : 'text-foreground/80'
                     }`}
                   >
                     {link.label}
