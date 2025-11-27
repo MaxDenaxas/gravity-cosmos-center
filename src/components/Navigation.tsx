@@ -1,13 +1,25 @@
 
 import { Link, useLocation } from 'react-router-dom';
+import { Menu, X } from 'lucide-react';
+import { useState } from 'react';
 import gravityLogo from '../assets/gravity-logo.png';
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 
 const Navigation = () => {
   const location = useLocation();
+  const [isOpen, setIsOpen] = useState(false);
   
   const isActive = (path: string) => {
     return location.pathname === path;
   };
+
+  const navLinks = [
+    { path: '/', label: 'ΑΡΧΙΚΗ' },
+    { path: '/about', label: 'ΣΧΕΤΙΚΑ ΜΕ ΕΜΑΣ' },
+    { path: '/services', label: 'ΥΠΗΡΕΣΙΕΣ' },
+    { path: '/location', label: 'ΠΟΥ ΒΡΙΣΚΟΜΑΣΤΕ' },
+    { path: '/contact', label: 'ΕΠΙΚΟΙΝΩΝΙΑ' },
+  ];
 
   return (
     <nav className="relative z-10 bg-white/95 backdrop-blur-sm shadow-lg">
@@ -21,48 +33,45 @@ const Navigation = () => {
             </div>
           </Link>
           
+          {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
-            <Link 
-              to="/" 
-              className={`font-semibold hover:text-purple-600 transition-colors ${
-                isActive('/') ? 'text-orange-500' : 'text-gray-700'
-              }`}
-            >
-              ΑΡΧΙΚΗ
-            </Link>
-            <Link 
-              to="/about" 
-              className={`hover:text-purple-600 transition-colors ${
-                isActive('/about') ? 'text-orange-500 font-semibold' : 'text-gray-700'
-              }`}
-            >
-              ΣΧΕΤΙΚΑ ΜΕ ΕΜΑΣ
-            </Link>
-            <Link 
-              to="/services" 
-              className={`hover:text-purple-600 transition-colors ${
-                isActive('/services') ? 'text-orange-500 font-semibold' : 'text-gray-700'
-              }`}
-            >
-              ΥΠΗΡΕΣΙΕΣ
-            </Link>
-            <Link 
-              to="/location" 
-              className={`hover:text-purple-600 transition-colors ${
-                isActive('/location') ? 'text-orange-500 font-semibold' : 'text-gray-700'
-              }`}
-            >
-              ΠΟΥ ΒΡΙΣΚΟΜΑΣΤΕ
-            </Link>
-            <Link 
-              to="/contact" 
-              className={`hover:text-purple-600 transition-colors ${
-                isActive('/contact') ? 'text-orange-500 font-semibold' : 'text-gray-700'
-              }`}
-            >
-              ΕΠΙΚΟΙΝΩΝΙΑ
-            </Link>
+            {navLinks.map((link) => (
+              <Link
+                key={link.path}
+                to={link.path}
+                className={`hover:text-purple-600 transition-colors ${
+                  isActive(link.path) ? 'text-orange-500 font-semibold' : 'text-gray-700'
+                }`}
+              >
+                {link.label}
+              </Link>
+            ))}
           </div>
+
+          {/* Mobile Navigation */}
+          <Sheet open={isOpen} onOpenChange={setIsOpen}>
+            <SheetTrigger asChild>
+              <button className="md:hidden p-2 hover:bg-gray-100 rounded-lg transition-colors">
+                <Menu size={24} className="text-gray-700" />
+              </button>
+            </SheetTrigger>
+            <SheetContent side="right" className="w-64 bg-white">
+              <div className="flex flex-col gap-6 mt-8">
+                {navLinks.map((link) => (
+                  <Link
+                    key={link.path}
+                    to={link.path}
+                    onClick={() => setIsOpen(false)}
+                    className={`text-lg hover:text-purple-600 transition-colors ${
+                      isActive(link.path) ? 'text-orange-500 font-semibold' : 'text-gray-700'
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+            </SheetContent>
+          </Sheet>
         </div>
       </div>
     </nav>
