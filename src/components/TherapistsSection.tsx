@@ -1,49 +1,38 @@
-
-import { User, Star } from 'lucide-react';
+import { Camera } from 'lucide-react';
 
 const TherapistsSection = () => {
   return (
     <section className="relative z-10 py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Οι Θεραπευτές μας
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
+            Οι Ειδικοί μας
           </h2>
-          <p className="text-xl text-white/80">
+          <p className="text-lg sm:text-xl text-white/70">
             Εμπειρογνώμονες στην ψυχική υγεία
           </p>
         </div>
         
         <div className="flex justify-center">
-          <div className="relative group">
-            <div className="bg-gradient-to-br from-purple-400/20 to-indigo-600/20 backdrop-blur-sm rounded-3xl p-8 border border-white/20 hover:scale-105 transition-all duration-300 shadow-2xl max-w-md">
-              {/* Cosmic decoration */}
-              <div className="absolute top-4 right-4">
-                <Star className="text-yellow-300 opacity-70" size={20} />
-              </div>
-              <div className="absolute bottom-4 left-4">
-                <Star className="text-blue-300 opacity-50" size={16} />
-              </div>
-              
-              {/* Avatar */}
+          <div className="group">
+            <div className="bg-white/5 backdrop-blur-md rounded-2xl p-8 border border-white/15 hover:border-cta/40 transition-all duration-300 max-w-sm text-center">
+              {/* Photo placeholder */}
               <div className="flex justify-center mb-6">
-                <div className="w-24 h-24 bg-gradient-to-br from-pink-400 to-purple-500 rounded-full flex items-center justify-center shadow-lg">
-                  <User className="text-white" size={40} />
+                <div className="w-32 h-32 rounded-full bg-gradient-to-br from-purple-900/60 to-indigo-900/60 border-2 border-white/20 flex items-center justify-center overflow-hidden">
+                  <div className="flex flex-col items-center text-white/40">
+                    <Camera size={28} />
+                    <span className="text-xs mt-1">Φωτογραφία</span>
+                  </div>
                 </div>
               </div>
               
               {/* Content */}
-              <div className="text-center">
-                <h3 className="text-2xl font-bold text-white mb-2">
-                  Μαρία Κιρσανίδου
-                </h3>
-                <p className="text-lg text-purple-200 mb-4">
-                  Ψυχολόγος
-                </p>
-              </div>
-              
-              {/* Glow effect */}
-              <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-purple-400/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
+              <h3 className="text-2xl font-bold text-white mb-1">
+                Μαρία Κιρσανίδου
+              </h3>
+              <p className="text-cta font-medium text-lg">
+                Ψυχολόγος
+              </p>
             </div>
           </div>
         </div>
