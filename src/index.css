@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -27,12 +25,15 @@
     --accent: 28 90% 60%;
     --accent-foreground: 0 0% 100%;
 
+    --cta: 187 80% 55%;
+    --cta-foreground: 220 60% 12%;
+
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 258 30% 90%;
     --input: 258 30% 90%;
-    --ring: 258 70% 45%;
+    --ring: 187 80% 55%;
 
     --radius: 0.5rem;
 
@@ -68,12 +69,15 @@
     --accent: 28 90% 60%;
     --accent-foreground: 0 0% 100%;
 
+    --cta: 187 80% 55%;
+    --cta-foreground: 220 60% 12%;
+
     --destructive: 0 62.8% 50%;
     --destructive-foreground: 0 0% 100%;
 
     --border: 258 30% 20%;
     --input: 258 30% 20%;
-    --ring: 258 70% 55%;
+    --ring: 187 80% 55%;
     --sidebar-background: 258 60% 10%;
     --sidebar-foreground: 0 0% 95%;
     --sidebar-primary: 258 70% 55%;
