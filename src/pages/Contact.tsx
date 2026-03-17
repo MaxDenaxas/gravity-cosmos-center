@@ -44,11 +44,11 @@ const Contact = () => {
               </h2>
               
               <div className="space-y-6">
-                <a href="tel:6974135009" className="flex items-center gap-4 p-4 bg-white/10 rounded-lg hover:bg-white/20 transition-colors">
+                <a href="tel:+306981219691" className="flex items-center gap-4 p-4 bg-white/10 rounded-lg hover:bg-white/20 transition-colors">
                   <Phone className="text-purple-300" size={24} />
                   <div>
                     <h3 className="text-white font-semibold">Τηλέφωνο</h3>
-                    <p className="text-white/80">6974135009</p>
+                    <p className="text-white/80">6981219691</p>
                   </div>
                 </a>
                 
