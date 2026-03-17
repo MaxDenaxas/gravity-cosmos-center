@@ -47,7 +47,7 @@ const Index = () => {
 
       <Navigation />
       <Hero />
-      <ServicesCloud />
+      <OurSpaceSection />
       <TherapistsSection />
       <Footer />
 
