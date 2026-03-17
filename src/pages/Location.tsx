@@ -77,7 +77,7 @@ const Location = () => {
                 <div className="relative">
                   <div className="bg-white/20 p-4 rounded-xl">
                     <iframe 
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50286.15587481944!2d23.653765549999997!3d38.024449799999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1a329b559eea9%3A0x62036ac940f156b2!2sWonder%20Waves%20-%20%CE%9A%CE%AD%CE%BD%CF%84%CF%81%CE%BF%20%CE%95%CE%B9%CE%B4%CE%B9%CE%BA%CF%8E%CE%BD%20%CE%98%CE%B5%CF%81%CE%B1%CF%80%CE%B5%CE%B9%CF%8E%CE%BD!5e0!3m2!1sen!2snl!4v1234567890123!5m2!1sen!2snl"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3145.5!2d23.6916!3d38.0131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1bb9b3c4b1a1d%3A0x1234567890abcdef!2zzqPOsc-Gz4bOv8-Nz4IgMiwgzqDOtc-BzrnPg8-Ezq3Pgc65IDEyMSAzNywgR3JlZWNl!5e0!3m2!1sel!2sgr!4v1710000000000!5m2!1sel!2sgr"
                       width="100%" 
                       height="400" 
                       style={{ border: 0, borderRadius: '8px' }}

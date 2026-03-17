@@ -6,9 +6,9 @@ const TopBar = () => {
       <div className="container mx-auto px-4 py-2">
         <div className="flex justify-between items-center text-white/70 text-sm">
           <div className="flex items-center gap-5">
-            <a href="tel:6974135009" className="flex items-center gap-2 hover:text-white transition-colors">
+            <a href="tel:+306981219691" className="flex items-center gap-2 hover:text-white transition-colors">
               <Phone size={14} />
-              <span className="hidden sm:inline">6974135009</span>
+              <span className="hidden sm:inline">6981219691</span>
             </a>
             <a href="mailto:gravity.center25@gmail.com" className="flex items-center gap-2 hover:text-white transition-colors">
               <Mail size={14} />

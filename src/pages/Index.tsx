@@ -36,7 +36,7 @@ const Index = () => {
       {/* Sticky mobile CTA */}
       <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-black/80 backdrop-blur-md border-t border-white/10 p-3">
         <a
-          href="tel:6974135009"
+          href="tel:+306981219691"
           className="block bg-cta text-cta-foreground font-bold text-center py-3 rounded-xl shadow-lg shadow-cta/30"
         >
           Κλείστε Δωρεάν Αξιολόγηση
