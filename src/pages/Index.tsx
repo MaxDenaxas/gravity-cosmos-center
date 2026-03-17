@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-950 via-purple-900 to-indigo-950 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-b from-[hsl(258,60%,8%)] via-[hsl(258,50%,12%)] to-[hsl(258,60%,8%)] relative overflow-hidden">
       {/* Stars Background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {[...Array(60)].map((_, i) => (
