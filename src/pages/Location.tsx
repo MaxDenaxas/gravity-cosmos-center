@@ -50,7 +50,7 @@ const Location = () => {
                       <MapPin className="text-purple-300 mt-1" size={20} />
                       <div>
                         <h3 className="font-semibold text-lg">Διεύθυνση</h3>
-                        <p className="text-white/80">ΚΕΝΤΡΟ ΕΙΔΙΚΩΝ ΘΕΡΑΠΕΙΩΝ GRAVITY</p>
+                        <p className="text-white/80">Σαπφούς 2, Περιστέρι 121 37</p>
                       </div>
                     </div>
                     
