@@ -1,6 +1,6 @@
-
 import { Star, Brain, Users, Heart, Puzzle } from 'lucide-react';
 import Navigation from '../components/Navigation';
+import TopBar from '../components/TopBar';
 
 const Services = () => {
   const services = [
@@ -67,6 +67,7 @@ const Services = () => {
         ))}
       </div>
 
+      <TopBar />
       <Navigation />
       
       <section className="relative z-10 py-20">
@@ -87,45 +88,25 @@ const Services = () => {
                 <div 
                   key={index}
                   className="group relative"
-                  style={{
-                    animationDelay: `${index * 0.2}s`
-                  }}
+                  style={{ animationDelay: `${index * 0.2}s` }}
                 >
                   <div className={`bg-gradient-to-br ${service.color} backdrop-blur-sm rounded-3xl p-8 border border-white/20 hover:scale-105 transition-all duration-300 shadow-2xl h-full`}>
-                    {/* Cosmic decorations */}
-                    <div className="absolute top-4 right-4">
-                      <Star className="text-white/30" size={16} />
-                    </div>
-                    <div className="absolute bottom-4 left-4">
-                      <Star className="text-white/20" size={12} />
-                    </div>
-                    <div className="absolute top-1/2 right-8">
-                      <Star className="text-white/25" size={10} />
-                    </div>
-                    
-                    {/* Planet surface effect */}
+                    <div className="absolute top-4 right-4"><Star className="text-white/30" size={16} /></div>
+                    <div className="absolute bottom-4 left-4"><Star className="text-white/20" size={12} /></div>
+                    <div className="absolute top-1/2 right-8"><Star className="text-white/25" size={10} /></div>
                     <div className="absolute inset-0 rounded-3xl bg-white/10 opacity-50"></div>
                     <div className="absolute top-6 left-8 w-6 h-6 rounded-full bg-white/20"></div>
                     <div className="absolute bottom-8 right-6 w-4 h-4 rounded-full bg-white/15"></div>
                     
-                    {/* Content */}
                     <div className="relative z-10">
                       <div className="flex justify-center mb-6">
                         <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center shadow-lg">
                           <IconComponent className="text-white" size={32} />
                         </div>
                       </div>
-                      
-                      <h3 className="text-2xl font-bold text-white mb-4 text-center">
-                        {service.title}
-                      </h3>
-                      
-                      <p className="text-white/90 text-center leading-relaxed">
-                        {service.description}
-                      </p>
+                      <h3 className="text-2xl font-bold text-white mb-4 text-center">{service.title}</h3>
+                      <p className="text-white/90 text-center leading-relaxed">{service.description}</p>
                     </div>
-                    
-                    {/* Hover glow effect */}
                     <div className="absolute inset-0 rounded-3xl bg-white/0 group-hover:bg-white/10 transition-all duration-300 pointer-events-none"></div>
                   </div>
                 </div>

@@ -19,7 +19,7 @@ const Hero = () => {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <a
-              href="tel:6981219691"
+              href="tel:6974135009"
               className="bg-cta text-cta-foreground font-bold text-lg px-8 py-4 rounded-xl shadow-lg shadow-cta/30 hover:shadow-cta/50 hover:scale-105 transition-all duration-300 w-full sm:w-auto"
             >
               Κλείστε Δωρεάν Αξιολόγηση

@@ -1,6 +1,6 @@
-
 import { Star, Phone, Mail, MapPin, Clock, Instagram, Facebook } from 'lucide-react';
 import Navigation from '../components/Navigation';
+import TopBar from '../components/TopBar';
 
 const Contact = () => {
   return (
@@ -22,32 +22,7 @@ const Contact = () => {
         ))}
       </div>
 
-      {/* Header */}
-      <header className="relative z-10 bg-indigo-600/90 backdrop-blur-sm">
-        <div className="container mx-auto px-4 py-3">
-          <div className="flex justify-between items-center text-white text-sm">
-            <div className="flex items-center gap-6">
-              <div className="flex items-center gap-2">
-                <Phone size={16} />
-                <span>6981219691</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Mail size={16} />
-                <span>gravity.center25@gmail.com</span>
-              </div>
-            </div>
-            <div className="flex gap-4">
-              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-purple-200 transition-colors">
-                <Instagram size={16} />
-              </a>
-              <a href="https://www.facebook.com/groups/1291275655934673/" target="_blank" rel="noopener noreferrer" className="hover:text-purple-200 transition-colors">
-                <Facebook size={16} />
-              </a>
-            </div>
-          </div>
-        </div>
-      </header>
-
+      <TopBar />
       <Navigation />
 
       {/* Main Content */}
@@ -63,18 +38,17 @@ const Contact = () => {
           </div>
 
           <div className="max-w-4xl mx-auto">
-            {/* Contact Information */}
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 shadow-2xl">
               <h2 className="text-3xl font-bold text-white mb-8">
                 Στοιχεία Επικοινωνίας
               </h2>
               
               <div className="space-y-6">
-                <a href="tel:6981219691" className="flex items-center gap-4 p-4 bg-white/10 rounded-lg hover:bg-white/20 transition-colors">
+                <a href="tel:6974135009" className="flex items-center gap-4 p-4 bg-white/10 rounded-lg hover:bg-white/20 transition-colors">
                   <Phone className="text-purple-300" size={24} />
                   <div>
                     <h3 className="text-white font-semibold">Τηλέφωνο</h3>
-                    <p className="text-white/80">6981219691</p>
+                    <p className="text-white/80">6974135009</p>
                   </div>
                 </a>
                 
@@ -105,10 +79,10 @@ const Contact = () => {
 
                 <div className="flex items-center gap-4 p-4 bg-white/10 rounded-lg">
                   <div className="flex gap-4">
-                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className="text-pink-300 hover:text-pink-200 transition-colors">
+                    <a href="https://www.instagram.com/gravity_center25" target="_blank" rel="noopener noreferrer" className="text-pink-300 hover:text-pink-200 transition-colors">
                       <Instagram size={24} />
                     </a>
-                    <a href="https://www.facebook.com/groups/1291275655934673/" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:text-blue-200 transition-colors">
+                    <a href="https://www.facebook.com/groups/1291275665934673/" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:text-blue-200 transition-colors">
                       <Facebook size={24} />
                     </a>
                   </div>
