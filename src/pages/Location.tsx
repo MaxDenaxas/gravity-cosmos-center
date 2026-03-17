@@ -68,7 +68,7 @@ const Location = () => {
                       <div>
                         <h3 className="font-semibold text-lg">Επικοινωνία</h3>
                         <p className="text-white/80">Τηλ: <a href="tel:+306981219691" className="hover:text-white transition-colors">6981219691</a></p>
-                        <p className="text-white/80">Email: gravity.center25@gmail.com</p>
+                        <p className="text-white/80">Email: <a href="mailto:gravity.center25@gmail.com" className="hover:text-white transition-colors">gravity.center25@gmail.com</a></p>
                       </div>
                     </div>
                   </div>
