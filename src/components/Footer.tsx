@@ -17,9 +17,9 @@ const Footer = () => {
           {/* Contact */}
           <div className="flex flex-col gap-3 items-center md:items-start">
             <h4 className="text-white font-semibold mb-2">Επικοινωνία</h4>
-            <a href="tel:6974135009" className="flex items-center gap-2 text-cta hover:underline transition-colors">
+            <a href="tel:+306981219691" className="flex items-center gap-2 text-cta hover:underline transition-colors">
               <Phone size={16} />
-              <span>697 413 5009</span>
+              <span>698 121 9691</span>
             </a>
             <a href="mailto:gravity.center25@gmail.com" className="flex items-center gap-2 text-white/70 hover:text-white transition-colors">
               <Mail size={16} />
