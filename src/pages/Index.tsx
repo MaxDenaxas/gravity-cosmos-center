@@ -1,7 +1,7 @@
 import { Star, Mail, Instagram, Facebook } from 'lucide-react';
 import Hero from '../components/Hero';
 import Navigation from '../components/Navigation';
-import ServicesCloud from '../components/ServicesCloud';
+import OurSpaceSection from '../components/OurSpaceSection';
 import TherapistsSection from '../components/TherapistsSection';
 import Footer from '../components/Footer';
 
