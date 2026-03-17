@@ -1,6 +1,6 @@
-
 import { Star, MapPin } from 'lucide-react';
 import Navigation from '../components/Navigation';
+import TopBar from '../components/TopBar';
 
 const Location = () => {
   return (
@@ -22,22 +22,7 @@ const Location = () => {
         ))}
       </div>
 
-      {/* Header */}
-      <header className="relative z-10 bg-indigo-600/90 backdrop-blur-sm">
-        <div className="container mx-auto px-4 py-3">
-          <div className="flex justify-between items-center text-white text-sm">
-            <div className="flex items-center gap-6">
-              <div className="flex items-center gap-2">
-                <span>6981219691</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <span>info@gravity.gr</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-
+      <TopBar />
       <Navigation />
 
       {/* Main Content */}
@@ -82,7 +67,7 @@ const Location = () => {
                       <div className="w-5 h-5 bg-blue-300 rounded-full mt-1"></div>
                       <div>
                         <h3 className="font-semibold text-lg">Επικοινωνία</h3>
-                        <p className="text-white/80">Τηλ: 6981219691</p>
+                        <p className="text-white/80">Τηλ: 6974135009</p>
                         <p className="text-white/80">Email: gravity.center25@gmail.com</p>
                       </div>
                     </div>

@@ -1,5 +1,5 @@
 import { Phone, Mail, MapPin, Instagram, Facebook } from 'lucide-react';
-import gravityLogo from '../assets/gravity-logo.png';
+import gravityLogo from '../assets/gravity-logo.jpg';
 
 const Footer = () => {
   return (
@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Logo & tagline */}
           <div className="flex flex-col items-center md:items-start gap-4">
-            <img src={gravityLogo} alt="Gravity Logo" className="w-20 h-20 object-contain" />
+            <img src={gravityLogo} alt="Gravity Logo" className="w-20 h-20 object-contain rounded-full" />
             <p className="text-white/60 text-sm text-center md:text-left">
               Balance the mind. Empower the path.
             </p>
@@ -17,9 +17,9 @@ const Footer = () => {
           {/* Contact */}
           <div className="flex flex-col gap-3 items-center md:items-start">
             <h4 className="text-white font-semibold mb-2">Επικοινωνία</h4>
-            <a href="tel:6981219691" className="flex items-center gap-2 text-cta hover:underline transition-colors">
+            <a href="tel:6974135009" className="flex items-center gap-2 text-cta hover:underline transition-colors">
               <Phone size={16} />
-              <span>698 121 9691</span>
+              <span>697 413 5009</span>
             </a>
             <a href="mailto:gravity.center25@gmail.com" className="flex items-center gap-2 text-white/70 hover:text-white transition-colors">
               <Mail size={16} />
@@ -43,7 +43,7 @@ const Footer = () => {
               </a>
             </div>
             <a
-              href="tel:6981219691"
+              href="tel:6974135009"
               className="mt-2 bg-cta text-cta-foreground font-bold px-6 py-3 rounded-xl shadow-lg shadow-cta/20 hover:shadow-cta/40 hover:scale-105 transition-all duration-300 text-center"
             >
               Κλείστε Ραντεβού
