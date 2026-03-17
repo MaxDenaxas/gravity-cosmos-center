@@ -1,13 +1,13 @@
 import { Star, Mail, Instagram, Facebook } from 'lucide-react';
 import Hero from '../components/Hero';
 import Navigation from '../components/Navigation';
-import ServicesCloud from '../components/ServicesCloud';
+import OurSpaceSection from '../components/OurSpaceSection';
 import TherapistsSection from '../components/TherapistsSection';
 import Footer from '../components/Footer';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-950 via-purple-900 to-indigo-950 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-b from-[hsl(258,60%,8%)] via-[hsl(258,50%,12%)] to-[hsl(258,60%,8%)] relative overflow-hidden">
       {/* Stars Background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {[...Array(60)].map((_, i) => (
@@ -47,7 +47,7 @@ const Index = () => {
 
       <Navigation />
       <Hero />
-      <ServicesCloud />
+      <OurSpaceSection />
       <TherapistsSection />
       <Footer />
 
