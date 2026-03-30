@@ -1,9 +1,12 @@
 import { ImageIcon } from 'lucide-react';
+import { useScrollFadeIn } from '../hooks/useScrollFadeIn';
 
 const OurSpaceSection = () => {
+  const { ref, isVisible } = useScrollFadeIn();
+
   return (
     <section className="relative z-10 py-16">
-      <div className="container mx-auto px-4">
+      <div ref={ref} className={`container mx-auto px-4 fade-section ${isVisible ? 'visible' : ''}`}>
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
             Ο Χώρος μας

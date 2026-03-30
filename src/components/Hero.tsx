@@ -1,10 +1,13 @@
 import { Link } from 'react-router-dom';
 import { Users, Fingerprint, MapPin } from 'lucide-react';
+import { useScrollFadeIn } from '../hooks/useScrollFadeIn';
 
 const Hero = () => {
+  const { ref, isVisible } = useScrollFadeIn(0.1);
+
   return (
     <section className="relative z-10 py-16 md:py-24 text-center">
-      <div className="container mx-auto px-4">
+      <div ref={ref} className={`container mx-auto px-4 fade-section ${isVisible ? 'visible' : ''}`}>
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 leading-tight">
             Gravity
@@ -20,7 +23,7 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <a
               href="tel:+306981219691"
-              className="bg-cta text-cta-foreground font-bold text-lg px-8 py-4 rounded-xl shadow-lg shadow-cta/30 hover:shadow-cta/50 hover:scale-105 transition-all duration-300 w-full sm:w-auto"
+              className="cta-glow bg-cta text-cta-foreground font-bold text-lg px-8 py-4 rounded-xl shadow-lg shadow-cta/30 hover:scale-105 transition-all duration-300 w-full sm:w-auto"
             >
               Κλείστε Δωρεάν Αξιολόγηση
             </a>
