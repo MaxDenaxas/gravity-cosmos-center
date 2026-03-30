@@ -77,9 +77,9 @@ const Location = () => {
                 <div className="relative">
                   <div className="bg-white/20 p-4 rounded-xl">
                     <iframe 
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.31688537503!2d23.6890258!3d38.016335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a1ef92aeaaaa9f%3A0xda9bd46d430880a4!2zS0VOVFJPIEVJRElLzq_OkyDOn86VzqHOkc6fzpXOmc6pzp0gR1JBVklUWSAtIM6fzqXOp86fzp_zp_zp_zp_zp_zpY!5e0!3m2!1sel!2sgr!4v1711831800000!5m2!1sel!2sgr"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d69755.64156794568!2d23.669682941734706!3d38.03020273303993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87ddef92aeaaa92f%3A0x9ab4d46e4308c3a4!2zzprOlc6dzqTOoc6fIM6VzpnOlM6ZzprOqc6dIM6YzpXOoc6RzqDOlc6ZzqnOnSBHUkFWSVRZ!5e0!3m2!1sel!2sgr!4v1774894543936!5m2!1sel!2sgr"
                       width="100%" 
-                      height="400" 
+                      height="450" 
                       style={{ border: 0, borderRadius: '8px' }}
                       allowFullScreen
                       loading="lazy" 
