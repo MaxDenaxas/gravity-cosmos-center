@@ -98,3 +98,22 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Scroll fade-in animation */
+.fade-section {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* CTA glow on hover */
+.cta-glow {
+  transition: box-shadow 0.4s ease, transform 0.3s ease;
+}
+.cta-glow:hover {
+  box-shadow: 0 0 24px hsl(var(--cta) / 0.45), 0 0 48px hsl(var(--cta) / 0.2);
+}
