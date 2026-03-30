@@ -1,5 +1,5 @@
 import { Phone, Mail, MapPin, Instagram, Facebook } from 'lucide-react';
-import gravityLogo from '../assets/gravity-logo.jpg';
+import gravityLogo from '../assets/gravity-logo-transparent.png';
 
 const Footer = () => {
   return (
