@@ -44,7 +44,7 @@ const Footer = () => {
             </div>
             <a
               href="tel:+306981219691"
-              className="mt-2 bg-cta text-cta-foreground font-bold px-6 py-3 rounded-xl shadow-lg shadow-cta/20 hover:shadow-cta/40 hover:scale-105 transition-all duration-300 text-center"
+              className="mt-2 cta-glow bg-cta text-cta-foreground font-bold px-6 py-3 rounded-xl shadow-lg shadow-cta/20 hover:scale-105 transition-all duration-300 text-center"
             >
               Κλείστε Ραντεβού
             </a>
