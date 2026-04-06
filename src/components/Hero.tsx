@@ -1,9 +1,12 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Users, Fingerprint, MapPin } from 'lucide-react';
 import { useScrollFadeIn } from '../hooks/useScrollFadeIn';
+import ContactModal from './ContactModal';
 
 const Hero = () => {
   const { ref, isVisible } = useScrollFadeIn(0.1);
+  const [modalOpen, setModalOpen] = useState(false);
 
   return (
     <section className="relative z-10 py-16 md:py-24 text-center">
@@ -19,14 +22,13 @@ const Hero = () => {
             Το Gravity είναι ένας σύγχρονος χώρος υποστήριξης αφιερωμένος στο παιδί και στην οικογένεια. Δημιουργήθηκε με στόχο να προσφέρει ένα ασφαλές, σταθερό και υποστηρικτικό περιβάλλον, όπου κάθε μέλος της οικογένειας μπορεί να νιώσει αποδοχή και φροντίδα.
           </p>
 
-          {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <a
-              href="tel:+306981219691"
+            <button
+              onClick={() => setModalOpen(true)}
               className="cta-glow bg-cta text-cta-foreground font-bold text-lg px-8 py-4 rounded-xl shadow-lg shadow-cta/30 hover:scale-105 transition-all duration-300 w-full sm:w-auto"
             >
-              Κλείστε Δωρεάν Αξιολόγηση
-            </a>
+              Κλείστε Ραντεβού
+            </button>
             <Link
               to="/services"
               className="border-2 border-white/60 text-white font-semibold text-lg px-8 py-4 rounded-xl hover:bg-white/10 transition-all duration-300 w-full sm:w-auto"
@@ -35,7 +37,6 @@ const Hero = () => {
             </Link>
           </div>
 
-          {/* Trust Bar */}
           <div className="flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-10 text-white/70 text-sm">
             <div className="flex items-center gap-2">
               <Users size={18} className="text-cta" />
@@ -54,6 +55,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      <ContactModal open={modalOpen} onOpenChange={setModalOpen} />
     </section>
   );
 };

@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Star } from 'lucide-react';
 import Hero from '../components/Hero';
 import Navigation from '../components/Navigation';
@@ -5,11 +6,13 @@ import TopBar from '../components/TopBar';
 import OurSpaceSection from '../components/OurSpaceSection';
 import TherapistsSection from '../components/TherapistsSection';
 import Footer from '../components/Footer';
+import ContactModal from '../components/ContactModal';
 
 const Index = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-800 to-blue-900 relative overflow-hidden">
-      {/* Stars Background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {[...Array(60)].map((_, i) => (
           <Star
@@ -35,13 +38,15 @@ const Index = () => {
 
       {/* Sticky mobile CTA */}
       <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-black/80 backdrop-blur-md border-t border-white/10 p-3">
-        <a
-          href="tel:+306981219691"
-          className="block cta-glow bg-cta text-cta-foreground font-bold text-center py-3 rounded-xl shadow-lg shadow-cta/30"
+        <button
+          onClick={() => setModalOpen(true)}
+          className="block w-full cta-glow bg-cta text-cta-foreground font-bold text-center py-3 rounded-xl shadow-lg shadow-cta/30"
         >
-          Κλείστε Δωρεάν Αξιολόγηση
-        </a>
+          Κλείστε Ραντεβού
+        </button>
       </div>
+
+      <ContactModal open={modalOpen} onOpenChange={setModalOpen} />
     </div>
   );
 };
