@@ -12,9 +12,9 @@ const Hero = () => {
     <section className="relative z-10 py-16 md:py-24 text-center">
       <div ref={ref} className={`container mx-auto px-4 fade-section ${isVisible ? 'visible' : ''}`}>
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 leading-tight">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 leading-tight">
             Gravity
-          </h2>
+          </h1>
           <p className="text-xl sm:text-2xl md:text-3xl text-white/90 mb-6">
             Balance the mind. Empower the path.
           </p>

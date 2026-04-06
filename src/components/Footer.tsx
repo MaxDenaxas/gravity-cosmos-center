@@ -11,7 +11,7 @@ const Footer = () => {
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div className="flex flex-col items-center md:items-start gap-4">
-            <img src={gravityLogo} alt="Gravity Logo" className="w-20 h-20 object-contain rounded-full" />
+            <img src={gravityLogo} alt="Κέντρο Ειδικών Θεραπειών Gravity Περιστέρι" className="w-20 h-20 object-contain rounded-full" />
             <p className="text-white/60 text-sm text-center md:text-left">
               Balance the mind. Empower the path.
             </p>

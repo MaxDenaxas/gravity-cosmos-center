@@ -45,7 +45,7 @@ const ServicesCloud = () => {
                 <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${service.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
                   <Icon size={26} className="text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-2">{service.title}</h3>
+                <h3 className="text-xl font-bold text-white mb-2" role="heading" aria-level={3}>{service.title}</h3>
                 <p className="text-white/60 text-sm leading-relaxed">{service.subtitle}</p>
               </div>
             );

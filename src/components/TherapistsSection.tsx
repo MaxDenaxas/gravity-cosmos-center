@@ -17,8 +17,8 @@ const TherapistsSection = () => {
               <div className="flex justify-center mb-6">
                 <div className="w-36 h-36 rounded-full bg-gradient-to-br from-purple-900/60 to-indigo-900/60 border-2 border-white/20 flex items-center justify-center overflow-hidden">
                   <div className="flex flex-col items-center text-white/40">
-                    <Camera size={28} />
-                    <span className="text-xs mt-1">Φωτογραφία</span>
+                     <Camera size={28} aria-hidden="true" />
+                    <span className="text-xs mt-1">Μαρία Κιρσανίδου, Ψυχολόγος στο Περιστέρι</span>
                   </div>
                 </div>
               </div>
