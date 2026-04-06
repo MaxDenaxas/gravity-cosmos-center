@@ -31,9 +31,11 @@ const Index = () => {
 
       <TopBar />
       <Navigation />
-      <Hero />
-      <OurSpaceSection />
-      <TherapistsSection />
+      <main>
+        <Hero />
+        <OurSpaceSection />
+        <TherapistsSection />
+      </main>
       <Footer />
 
       {/* Sticky mobile CTA */}

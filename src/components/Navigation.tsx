@@ -22,11 +22,11 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="relative z-10 bg-white/95 backdrop-blur-sm shadow-lg">
+    <nav className="relative z-10 bg-white/95 backdrop-blur-sm shadow-lg" aria-label="Κύρια πλοήγηση">
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center gap-4">
-            <img src={gravityLogo} alt="Gravity Logo" className="w-16 h-16 object-contain" />
+            <img src={gravityLogo} alt="Κέντρο Ειδικών Θεραπειών Gravity Περιστέρι" className="w-16 h-16 object-contain" />
             <div>
               <h1 className="text-2xl font-bold text-foreground">Gravity</h1>
               <p className="text-sm text-muted-foreground">Balance the mind. Empower the path.</p>
