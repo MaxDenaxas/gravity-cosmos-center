@@ -1,12 +1,15 @@
+import { useState } from 'react';
 import { Phone, Mail, MapPin, Instagram, Facebook } from 'lucide-react';
 import gravityLogo from '../assets/gravity-logo-transparent.png';
+import ContactModal from './ContactModal';
 
 const Footer = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+
   return (
     <footer className="relative z-10 border-t border-white/10 bg-black/30 backdrop-blur-sm">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-          {/* Logo & tagline */}
           <div className="flex flex-col items-center md:items-start gap-4">
             <img src={gravityLogo} alt="Gravity Logo" className="w-20 h-20 object-contain rounded-full" />
             <p className="text-white/60 text-sm text-center md:text-left">
@@ -14,7 +17,6 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Contact */}
           <div className="flex flex-col gap-3 items-center md:items-start">
             <h4 className="text-white font-semibold mb-2">Επικοινωνία</h4>
             <a href="tel:+306981219691" className="flex items-center gap-2 text-cta hover:underline transition-colors">
@@ -31,7 +33,6 @@ const Footer = () => {
             </a>
           </div>
 
-          {/* Social & CTA */}
           <div className="flex flex-col gap-4 items-center md:items-start">
             <h4 className="text-white font-semibold mb-2">Ακολουθήστε μας</h4>
             <div className="flex gap-4">
@@ -42,12 +43,12 @@ const Footer = () => {
                 <Facebook size={22} />
               </a>
             </div>
-            <a
-              href="tel:+306981219691"
+            <button
+              onClick={() => setModalOpen(true)}
               className="mt-2 cta-glow bg-cta text-cta-foreground font-bold px-6 py-3 rounded-xl shadow-lg shadow-cta/20 hover:scale-105 transition-all duration-300 text-center"
             >
               Κλείστε Ραντεβού
-            </a>
+            </button>
           </div>
         </div>
 
@@ -55,6 +56,7 @@ const Footer = () => {
           © {new Date().getFullYear()} Gravity — Κέντρο Ειδικών Θεραπειών
         </div>
       </div>
+      <ContactModal open={modalOpen} onOpenChange={setModalOpen} />
     </footer>
   );
 };
