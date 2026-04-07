@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Location from "./pages/Location";
+import OurSpace from "./pages/OurSpace";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 

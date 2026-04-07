@@ -30,7 +30,7 @@ const About = () => {
         <div className="container mx-auto px-4 max-w-4xl">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-              Σχετικά με εμάς
+              Η Φιλοσοφία μας
             </h1>
             <div className="flex justify-center items-center gap-4 mb-8">
               <Orbit className="text-purple-300 animate-spin" size={32} />
