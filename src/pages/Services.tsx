@@ -116,6 +116,8 @@ const Services = () => {
           </div>
         </div>
       </section>
+
+      <TargetAudienceSection />
     </div>
   );
 };
