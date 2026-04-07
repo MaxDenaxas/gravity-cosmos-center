@@ -1,6 +1,10 @@
+import { useState } from 'react';
 import { Camera } from 'lucide-react';
+import BioModal from './BioModal';
 
 const TherapistsSection = () => {
+  const [bioOpen, setBioOpen] = useState(false);
+
   return (
     <section className="relative z-10 py-20">
       <div className="container mx-auto px-4">
@@ -17,7 +21,7 @@ const TherapistsSection = () => {
               <div className="flex justify-center mb-6">
                 <div className="w-36 h-36 rounded-full bg-gradient-to-br from-purple-900/60 to-indigo-900/60 border-2 border-white/20 flex items-center justify-center overflow-hidden">
                   <div className="flex flex-col items-center text-white/40">
-                     <Camera size={28} aria-hidden="true" />
+                    <Camera size={28} aria-hidden="true" />
                     <span className="text-xs mt-1">Μαρία Κιρσανίδου, Ψυχολόγος στο Περιστέρι</span>
                   </div>
                 </div>
@@ -30,16 +34,25 @@ const TherapistsSection = () => {
                 Ψυχολόγος
               </p>
 
-              {/* Bio placeholder */}
-              <div className="bg-white/5 border border-white/10 rounded-xl p-5">
+              {/* Short hook bio */}
+              <div className="bg-white/5 border border-white/10 rounded-xl p-5 mb-5">
                 <p className="text-white/70 text-sm leading-relaxed">
-                  Η Μαρία Κιρσανίδου είναι πτυχιούχος Ψυχολογίας με εξειδίκευση στην παιδική και εφηβική ψυχοθεραπεία. Με πολυετή κλινική εμπειρία, εστιάζει στην ολιστική υποστήριξη του παιδιού και της οικογένειας, αξιοποιώντας σύγχρονες θεραπευτικές προσεγγίσεις.
+                  Με 25+ χρόνια κλινικής εμπειρίας και περισσότερες από 10.000 συνεδρίες, παρέχω επιστημονικά τεκμηριωμένη υποστήριξη σε παιδιά, εφήβους, ενήλικες και γονείς.
                 </p>
               </div>
+
+              <button
+                onClick={() => setBioOpen(true)}
+                className="border-2 border-purple-400/50 text-white font-semibold px-6 py-2.5 rounded-xl hover:bg-white/10 transition-all duration-300 text-sm"
+              >
+                Αναλυτικό Βιογραφικό
+              </button>
             </div>
           </div>
         </div>
       </div>
+
+      <BioModal open={bioOpen} onOpenChange={setBioOpen} />
     </section>
   );
 };
