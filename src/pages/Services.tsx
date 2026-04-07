@@ -1,6 +1,7 @@
 import { Star, Brain, Users, Heart, Puzzle } from 'lucide-react';
 import Navigation from '../components/Navigation';
 import TopBar from '../components/TopBar';
+import TargetAudienceSection from '../components/TargetAudienceSection';
 
 const Services = () => {
   const services = [
