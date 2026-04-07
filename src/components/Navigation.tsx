@@ -15,8 +15,9 @@ const Navigation = () => {
 
   const navLinks = [
     { path: '/', label: 'ΑΡΧΙΚΗ' },
-    { path: '/about', label: 'ΣΧΕΤΙΚΑ ΜΕ ΕΜΑΣ' },
+    { path: '/about', label: 'Η ΦΙΛΟΣΟΦΙΑ ΜΑΣ' },
     { path: '/services', label: 'ΥΠΗΡΕΣΙΕΣ' },
+    { path: '/our-space', label: 'Ο ΧΩΡΟΣ ΜΑΣ' },
     { path: '/location', label: 'ΠΟΥ ΒΡΙΣΚΟΜΑΣΤΕ' },
     { path: '/contact', label: 'ΕΠΙΚΟΙΝΩΝΙΑ' },
   ];
