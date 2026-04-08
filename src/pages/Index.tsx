@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Star } from 'lucide-react';
 import Hero from '../components/Hero';
 import Navigation from '../components/Navigation';
 import TopBar from '../components/TopBar';
@@ -12,23 +11,7 @@ const Index = () => {
   const [modalOpen, setModalOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-800 to-blue-900 relative overflow-hidden">
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {[...Array(60)].map((_, i) => (
-          <Star
-            key={i}
-            className="absolute text-white opacity-15 animate-pulse"
-            size={Math.random() * 6 + 3}
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 3}s`,
-              animationDuration: `${Math.random() * 2 + 2}s`
-            }}
-          />
-        ))}
-      </div>
-
+    <div className="min-h-screen bg-[#F6F1FF] relative overflow-hidden">
       <TopBar />
       <Navigation />
       <main>
@@ -39,7 +22,7 @@ const Index = () => {
       <Footer />
 
       {/* Sticky mobile CTA */}
-      <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-black/80 backdrop-blur-md border-t border-white/10 p-3">
+      <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-white/80 backdrop-blur-md border-t border-purple-200 p-3">
         <button
           onClick={() => setModalOpen(true)}
           className="block w-full cta-glow bg-cta text-cta-foreground font-bold text-center py-3 rounded-xl shadow-lg shadow-cta/30"
