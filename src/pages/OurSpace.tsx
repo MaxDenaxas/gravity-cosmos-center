@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Star, ArrowLeft } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
 import Navigation from '../components/Navigation';
 import TopBar from '../components/TopBar';
 import Footer from '../components/Footer';
@@ -15,11 +15,11 @@ import space7 from '../assets/space-7.jpg';
 import space8 from '../assets/space-8.jpg';
 
 const galleryItems = [
-  { src: space7, label: 'Αίθουσα Θεραπείας', alt: 'Κύρια αίθουσα θεραπείας στο Κέντρο Gravity' },
-  { src: space6, label: 'Παιδικός Χώρος', alt: 'Παιδικός χώρος δραστηριοτήτων στο Κέντρο Gravity' },
-  { src: space1, label: 'Γωνιά Παρέμβασης Παιδιών', alt: 'Γωνιά παιδικής παρέμβασης με Playmobil στο Κέντρο Gravity' },
+  { src: space7, label: 'Αίθουσα Εργοθεραπείας', alt: 'Αίθουσα εργοθεραπείας στο Κέντρο Gravity' },
+  { src: space6, label: 'Χώρος Παιχνιδιού', alt: 'Χώρος παιχνιδιού στο Κέντρο Gravity' },
+  { src: space1, label: 'Συμβολικό Παιχνίδι', alt: 'Γωνιά συμβολικού παιχνιδιού στο Κέντρο Gravity' },
   { src: space8, label: 'Αίθουσα Αναμονής', alt: 'Αίθουσα αναμονής γονέων στο Κέντρο Gravity' },
-  { src: space5, label: 'Γραφείο Αξιολογήσεων', alt: 'Γραφείο ψυχολογικών αξιολογήσεων στο Κέντρο Gravity' },
+  { src: space5, label: 'Γραφείο Ψυχολόγου', alt: 'Γραφείο ψυχολόγου στο Κέντρο Gravity' },
   { src: space3, label: 'Αίθουσα Λογοθεραπείας', alt: 'Αίθουσα λογοθεραπείας στο Κέντρο Gravity Περιστέρι' },
   { src: space4, label: 'Εκπαιδευτικό Υλικό', alt: 'Εκπαιδευτικό υλικό ειδικής αγωγής στο Κέντρο Gravity' },
   { src: space2, label: 'Βιβλιοθήκη & Υλικά', alt: 'Βιβλιοθήκη και εκπαιδευτικά υλικά στο Κέντρο Gravity' },
@@ -29,33 +29,17 @@ const OurSpace = () => {
   const { ref, isVisible } = useScrollFadeIn();
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-800 to-blue-900 relative overflow-hidden">
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {[...Array(50)].map((_, i) => (
-          <Star
-            key={i}
-            className="absolute text-white opacity-15 animate-pulse"
-            size={Math.random() * 6 + 3}
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 3}s`,
-              animationDuration: `${Math.random() * 2 + 2}s`,
-            }}
-          />
-        ))}
-      </div>
-
+    <div className="min-h-screen bg-[#F6F1FF] relative overflow-hidden">
       <TopBar />
       <Navigation />
 
       <main className="relative z-10 py-16">
         <div ref={ref} className={`container mx-auto px-4 fade-section ${isVisible ? 'visible' : ''}`}>
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
+            <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-4">
               Ο Χώρος μας
             </h1>
-            <p className="text-lg text-white/70 max-w-2xl mx-auto">
+            <p className="text-lg text-foreground/60 max-w-2xl mx-auto">
               Γνωρίστε το Κέντρο Ειδικών Θεραπειών Gravity
             </p>
           </div>
@@ -64,7 +48,7 @@ const OurSpace = () => {
             {galleryItems.map((item, i) => (
               <div
                 key={i}
-                className="group rounded-2xl overflow-hidden border border-white/15 bg-white/5 backdrop-blur-md hover:border-cta/40 transition-all duration-300"
+                className="group rounded-2xl overflow-hidden border border-purple-200 bg-white/60 backdrop-blur-md hover:border-cta/40 transition-all duration-300"
               >
                 <div className="aspect-[4/3] overflow-hidden">
                   <img
@@ -75,7 +59,7 @@ const OurSpace = () => {
                   />
                 </div>
                 <div className="p-3 text-center">
-                  <h3 className="text-white/90 text-sm font-medium">{item.label}</h3>
+                  <h3 className="text-foreground/80 text-sm font-medium">{item.label}</h3>
                 </div>
               </div>
             ))}

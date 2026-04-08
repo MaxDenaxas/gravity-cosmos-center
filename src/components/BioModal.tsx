@@ -16,15 +16,15 @@ const BioModal = ({ open, onOpenChange }: BioModalProps) => {
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="bg-black/70 backdrop-blur-xl border border-white/15 rounded-2xl max-w-lg w-[90vw] p-0 gap-0">
+      <DialogContent className="bg-white/90 backdrop-blur-xl border border-purple-200 rounded-2xl max-w-lg w-[90vw] p-0 gap-0">
         <button
           onClick={() => onOpenChange(false)}
-          className="absolute right-4 top-4 text-white/60 hover:text-white transition-colors z-10"
+          className="absolute right-4 top-4 text-foreground/40 hover:text-foreground transition-colors z-10"
         >
           <X size={22} />
         </button>
         <DialogHeader className="p-6 pb-2">
-          <DialogTitle className="text-2xl font-bold text-white text-center">
+          <DialogTitle className="text-2xl font-bold text-foreground text-center">
             Μαρία Κιρσανίδου — Βιογραφικό
           </DialogTitle>
         </DialogHeader>
@@ -32,7 +32,7 @@ const BioModal = ({ open, onOpenChange }: BioModalProps) => {
           {bioPoints.map((point, i) => (
             <div key={i} className="flex gap-3 items-start">
               <CheckCircle2 className="text-cta shrink-0 mt-0.5" size={18} />
-              <p className="text-white/85 text-sm leading-relaxed">{point}</p>
+              <p className="text-foreground/80 text-sm leading-relaxed">{point}</p>
             </div>
           ))}
         </div>
