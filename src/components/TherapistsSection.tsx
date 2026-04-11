@@ -16,10 +16,10 @@ const TherapistsSection = () => {
         
         <div className="flex justify-center">
           <div className="group">
-            <div className="bg-white/60 backdrop-blur-md rounded-2xl p-8 border border-purple-200 hover:border-cta/40 transition-all duration-300 max-w-md text-center">
+            <div className="bg-white/5 backdrop-blur-md rounded-2xl p-8 border border-white/10 hover:border-cta/40 transition-all duration-300 max-w-md text-center">
               {/* Photo */}
               <div className="flex justify-center mb-6">
-                <div className="w-36 h-36 rounded-full border-2 border-purple-200 overflow-hidden">
+                <div className="w-32 h-32 rounded-full border-2 border-cta/30 overflow-hidden shadow-lg shadow-cta/10">
                   <img
                     src={mariaPhoto}
                     alt="Μαρία Κιρσανίδου, Ψυχολόγος στο Περιστέρι"
@@ -36,7 +36,7 @@ const TherapistsSection = () => {
               </p>
 
               {/* Short hook bio */}
-              <div className="bg-purple-50/80 border border-purple-100 rounded-xl p-5 mb-5">
+              <div className="bg-white/5 border border-white/10 rounded-xl p-5 mb-5">
                 <p className="text-foreground/70 text-sm leading-relaxed">
                   Με 25+ χρόνια κλινικής εμπειρίας και περισσότερες από 10.000 συνεδρίες, παρέχω επιστημονικά τεκμηριωμένη υποστήριξη σε παιδιά, εφήβους, ενήλικες και γονείς.
                 </p>
@@ -44,7 +44,7 @@ const TherapistsSection = () => {
 
               <button
                 onClick={() => setBioOpen(true)}
-                className="border-2 border-primary/40 text-primary font-semibold px-6 py-2.5 rounded-xl hover:bg-primary/5 transition-all duration-300 text-sm"
+                className="border-2 border-white/20 text-foreground font-semibold px-6 py-2.5 rounded-xl hover:bg-white/5 transition-all duration-300 text-sm"
               >
                 Αναλυτικό Βιογραφικό
               </button>
