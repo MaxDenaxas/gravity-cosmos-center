@@ -16,7 +16,7 @@ const Services = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#F6F1FF] relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-b from-[#2D1A4A] via-[#3A2265] to-[#4B2E83] relative overflow-hidden">
       <TopBar />
       <Navigation />
       

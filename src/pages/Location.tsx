@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 
 const Location = () => {
   return (
-    <div className="min-h-screen bg-[#F6F1FF] relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-b from-[#2D1A4A] via-[#3A2265] to-[#4B2E83] relative overflow-hidden">
       <TopBar />
       <Navigation />
 
@@ -16,21 +16,21 @@ const Location = () => {
               Που Βρισκόμαστε
             </h1>
             <div className="flex justify-center items-center gap-2 mb-8">
-              <MapPin className="text-primary" size={32} />
+              <MapPin className="text-cta" size={32} />
             </div>
           </div>
 
           <div className="max-w-6xl mx-auto">
-            <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-purple-200">
+            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-white/10">
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div className="text-foreground space-y-6">
-                  <h2 className="text-3xl font-bold text-primary">
+                  <h2 className="text-3xl font-bold text-cta">
                     Βρείτε μας εύκολα
                   </h2>
                   
                   <div className="space-y-4">
                     <div className="flex items-start gap-3">
-                      <MapPin className="text-primary mt-1" size={20} />
+                      <MapPin className="text-cta mt-1" size={20} />
                       <div>
                         <h3 className="font-semibold text-lg">Διεύθυνση</h3>
                         <p className="text-foreground/70">Σαπφούς 2, Περιστέρι 121 37</p>
@@ -58,7 +58,7 @@ const Location = () => {
                 </div>
                 
                 <div className="relative">
-                  <div className="bg-primary/10 p-4 rounded-xl">
+                  <div className="bg-white/5 p-4 rounded-xl">
                     <iframe 
                       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d69755.64156794568!2d23.669682941734706!3d38.03020273303993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87ddef92aeaaa92f%3A0x9ab4d46e4308c3a4!2zzprOlc6dzqTOoc6fIM6VzpnOlM6ZzprOqc6dIM6YzpXOoc6RzqDOlc6ZzqnOnSBHUkFWSVRZ!5e0!3m2!1sel!2sgr!4v1774894543936!5m2!1sel!2sgr"
                       width="100%" 

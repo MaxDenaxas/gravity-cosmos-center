@@ -7,7 +7,7 @@ const Footer = () => {
   const [modalOpen, setModalOpen] = useState(false);
 
   return (
-    <footer className="relative z-10 border-t border-purple-200 bg-primary/5 backdrop-blur-sm">
+    <footer className="relative z-10 border-t border-white/10 bg-white/5 backdrop-blur-sm">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div className="flex flex-col items-center md:items-start gap-4">
@@ -52,7 +52,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-10 pt-6 border-t border-purple-200 text-center text-foreground/40 text-sm">
+        <div className="mt-10 pt-6 border-t border-white/10 text-center text-foreground/40 text-sm">
           © {new Date().getFullYear()} Gravity — Κέντρο Ειδικών Θεραπειών
         </div>
       </div>

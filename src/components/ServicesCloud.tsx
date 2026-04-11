@@ -40,7 +40,7 @@ const ServicesCloud = () => {
             return (
               <div
                 key={index}
-                className="group bg-white/60 backdrop-blur-md border border-purple-200 rounded-2xl p-6 hover:border-cta/30 hover:bg-white/80 hover:scale-[1.03] transition-all duration-300"
+                className="group bg-white/5 backdrop-blur-md border border-white/10 rounded-2xl p-6 hover:border-cta/30 hover:bg-white/10 hover:scale-[1.03] transition-all duration-300"
               >
                 <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${service.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
                   <Icon size={26} className="text-white" />
