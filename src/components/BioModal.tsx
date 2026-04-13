@@ -1,4 +1,4 @@
-import { X, CheckCircle2 } from 'lucide-react';
+import { CheckCircle2 } from 'lucide-react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from './ui/dialog';
 
 interface BioModalProps {
@@ -17,12 +17,6 @@ const BioModal = ({ open, onOpenChange }: BioModalProps) => {
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="bg-[#2D1A4A]/95 backdrop-blur-xl border border-white/15 rounded-2xl max-w-lg w-[90vw] p-0 gap-0">
-        <button
-          onClick={() => onOpenChange(false)}
-          className="absolute right-4 top-4 text-foreground/40 hover:text-foreground transition-colors z-10"
-        >
-          <X size={22} />
-        </button>
         <DialogHeader className="p-6 pb-2">
           <DialogTitle className="text-2xl font-bold text-foreground text-center">
             Μαρία Κιρσανίδου — Βιογραφικό
