@@ -1,7 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import { Menu } from 'lucide-react';
 import { useState } from 'react';
-import gravityLogo from '../assets/gravity-logo.png';
+import gravityLogo from '../assets/gravity-logo-transparent.png';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 
 const Navigation = () => {
