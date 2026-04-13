@@ -1,4 +1,4 @@
-import { Phone, Mail, X } from 'lucide-react';
+import { Phone, Mail } from 'lucide-react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from './ui/dialog';
 
 interface ContactModalProps {
