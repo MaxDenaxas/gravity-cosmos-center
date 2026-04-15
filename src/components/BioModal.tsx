@@ -16,7 +16,7 @@ const BioModal = ({ open, onOpenChange }: BioModalProps) => {
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="bg-[#2D1A4A]/95 backdrop-blur-xl border border-white/15 rounded-2xl max-w-lg w-[90vw] p-0 gap-0">
+      <DialogContent className="bg-[#4B2E83]/95 backdrop-blur-xl border border-white/15 rounded-2xl max-w-lg w-[90vw] p-0 gap-0">
         <DialogHeader className="p-6 pb-2">
           <DialogTitle className="text-2xl font-bold text-foreground text-center">
             Μαρία Κιρσανίδου — Βιογραφικό

@@ -29,7 +29,7 @@ const OurSpace = () => {
   const { ref, isVisible } = useScrollFadeIn();
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#2D1A4A] via-[#3A2265] to-[#4B2E83] relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-b from-[#4B2E83] via-[#5C3D96] to-[#6E4FAA] relative overflow-hidden">
       <TopBar />
       <Navigation />
 
@@ -48,7 +48,7 @@ const OurSpace = () => {
             {galleryItems.map((item, i) => (
               <div
                 key={i}
-                className="group rounded-2xl overflow-hidden border border-white/10 bg-white/5 backdrop-blur-md hover:border-cta/40 transition-all duration-300"
+                className="group rounded-2xl overflow-hidden border border-white/15 bg-white/10 backdrop-blur-md hover:border-cta/40 transition-all duration-300"
               >
                 <div className="aspect-[4/3] overflow-hidden">
                   <img

@@ -29,7 +29,7 @@ const OurSpaceSection = () => {
           {images.map((img, i) => (
             <div
               key={i}
-              className="rounded-2xl overflow-hidden border border-white/10 bg-white/5 backdrop-blur-md hover:border-cta/40 transition-all duration-300"
+              className="rounded-2xl overflow-hidden border border-white/15 bg-white/10 backdrop-blur-md hover:border-cta/40 transition-all duration-300"
             >
               <div className="aspect-[4/3] overflow-hidden">
                 <img
