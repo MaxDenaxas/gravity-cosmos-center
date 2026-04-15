@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 
 const Location = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#2D1A4A] via-[#3A2265] to-[#4B2E83] relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-b from-[#4B2E83] via-[#5C3D96] to-[#6E4FAA] relative overflow-hidden">
       <TopBar />
       <Navigation />
 
@@ -21,7 +21,7 @@ const Location = () => {
           </div>
 
           <div className="max-w-6xl mx-auto">
-            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-white/10">
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-white/15">
               <div className="grid md:grid-cols-2 gap-8 items-center">
                 <div className="text-foreground space-y-6">
                   <h2 className="text-3xl font-bold text-cta">

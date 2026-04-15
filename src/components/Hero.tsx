@@ -22,7 +22,7 @@ const Hero = () => {
             Το Gravity είναι ένας σύγχρονος χώρος υποστήριξης αφιερωμένος στο παιδί και στην οικογένεια. Δημιουργήθηκε με στόχο να προσφέρει ένα ασφαλές, σταθερό και υποστηρικτικό περιβάλλον, όπου κάθε μέλος της οικογένειας μπορεί να νιώσει αποδοχή και φροντίδα.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+          <div id="hero-cta-area" className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <button
               onClick={() => setModalOpen(true)}
               className="cta-glow bg-cta text-cta-foreground font-bold text-lg px-8 py-4 rounded-xl shadow-lg shadow-cta/30 hover:scale-105 transition-all duration-300 w-full sm:w-auto"

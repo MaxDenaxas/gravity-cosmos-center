@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 
 const About = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#2D1A4A] via-[#3A2265] to-[#4B2E83] relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-b from-[#4B2E83] via-[#5C3D96] to-[#6E4FAA] relative overflow-hidden">
       <TopBar />
       <Navigation />
 
@@ -22,7 +22,7 @@ const About = () => {
             </div>
           </div>
 
-          <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 md:p-12 shadow-xl border border-white/10">
+          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 md:p-12 shadow-xl border border-white/15">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8 text-center">
               Ποια η ιδέα πίσω από το Gravity
             </h2>
