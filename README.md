@@ -4,6 +4,10 @@
 
 **URL**: https://lovable.dev/projects/8dc751ff-4250-4ede-ab60-901b378aa425
 
+## Gravity Cosmos Center: Professional Practice Portal
+**Overview:** A full-stack, responsive professional website developed for a clinical psychology and specialized pediatric therapy center.
+**Problem Solved:** Digitizes the patient onboarding process and practice presentation, establishing a modern digital footprint with an accessible UI/UX and optimized web performance.
+
 ## How can I edit this code?
 
 There are several ways of editing your application.
